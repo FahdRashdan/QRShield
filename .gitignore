@@ -1,0 +1,51 @@
+# ---------- Secrets (never commit) ----------
+.env
+*.env
+!.env.example
+kaggle.json
+*.pem
+*.key
+google-services.json
+GoogleService-Info.plist
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Datasets (too big for Git) ----------
+ml/data/raw/*
+!ml/data/raw/.gitkeep
+*.csv
+*.parquet
+*.zip
+
+# ---------- Trained models ----------
+*.joblib
+*.pkl
+backend/models/
+
+# ---------- Flutter / Dart ----------
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/android/local.properties
+mobile/android/key.properties
+mobile/android/.gradle/
+mobile/ios/Pods/
+*.iml
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
