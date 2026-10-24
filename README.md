@@ -26,7 +26,7 @@ QR codes hide their destination until they are scanned. A tampered code can send
 
 > QRShield reduces risk but cannot prove a perfect fake is fake. A green verdict means no risk was found by the completed checks.
 
-![Architecture](docs/architecture.png)
+![Architecture](Architecture.png)
 
 ---
 
