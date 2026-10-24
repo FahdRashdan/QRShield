@@ -160,30 +160,3 @@ kaggle datasets download -d samahsadiq/benign-and-malicious-qr-codes -p ml/data/
 ```
 
 You can also download each dataset manually from its Kaggle page and place the files in `ml/data/raw/`.
-
----
-
-## 7. Running the EDA Notebook
-
-The notebook is `ml/notebooks/01_eda_urls.ipynb`.
-
-**In Google Colab (recommended)**
-
-1. Click the badge:
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/qrshield/blob/main/ml/notebooks/01_eda_urls.ipynb)
-2. Run the first cell to install packages and download the datasets (upload `kaggle.json` when asked).
-3. Choose **Runtime → Run all**.
-
-**Locally**
-
-```bash
-cd ml
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-jupyter notebook notebooks/01_eda_urls.ipynb
-```
-
-Make sure the datasets are in `ml/data/raw/` first.
-
-The notebook looks at dataset size and missing values, class balance, URL length and character patterns, and duplicates between the two URL datasets.
